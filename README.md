@@ -14,7 +14,7 @@ docker run \
      --rm \
      --interactive \
      --tty \
-     --volume (pwd):/opt/volume \
+     --volume $(pwd):/opt/volume \
      --workdir /opt/volume \
      amd64/rust cargo build --release
 
