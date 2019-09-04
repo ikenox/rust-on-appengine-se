@@ -6,9 +6,10 @@
 - Docker
 - gcloud command-line tool
 
-## Build
+## Build and Deploy
 
 ```sh
+# Build native binary for App Engine
 docker run \
      --rm \
      --interactive \
@@ -16,10 +17,7 @@ docker run \
      --volume (pwd):/opt/volume \
      --workdir /opt/volume \
      amd64/rust cargo build --release
-```
 
-## Deploy
-
-```sh
-gcloud app deploy --project=your-gcp-project-id --version=rust-sample
+# Deploy to App Engine
+gcloud app deploy --project=your-gcp-project-id --version=sample
 ```
