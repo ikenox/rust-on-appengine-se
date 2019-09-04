@@ -20,4 +20,7 @@ docker run \
 
 # Deploy to App Engine
 gcloud app deploy --project=your-gcp-project-id --version=sample
+
+# Browse
+gcloud app browse
 ```
