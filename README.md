@@ -8,6 +8,8 @@
 
 ## Build and Deploy
 
+In the project root directory,
+
 ```sh
 # Build native binary for App Engine
 docker run \
